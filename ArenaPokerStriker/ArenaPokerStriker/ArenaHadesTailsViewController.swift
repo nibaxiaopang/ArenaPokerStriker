@@ -7,27 +7,20 @@
 
 import Foundation
 import UIKit
+import Adjust
 
 class ArenaHadesTailsViewController: UIViewController {
 
     @IBOutlet weak var hadesTailsImg: UIImageView!
     @IBOutlet weak var haedsBtn: UIButton!
     @IBOutlet weak var tailsBtn: UIButton!
-    @IBOutlet weak var totalCoin: UILabel!
-    @IBOutlet weak var betCoin: UILabel!
-    @IBOutlet weak var plusCoin: UIButton!
-    @IBOutlet weak var minusCoin: UIButton!
     
     var haedsTailsImage = ["hades","tails"]
     var selectedOption: String?
-    var currentBet = 0
-    var coins = 1000
     
     override func viewDidLoad() {
         super.viewDidLoad()
         showHowToPlayAlert()
-        totalCoin.text = "\(coins)"
-        betCoin.text = "\(currentBet)"
         resetSelectionUI() // Reset button selection at the beginning
     }
     
@@ -67,30 +60,18 @@ class ArenaHadesTailsViewController: UIViewController {
             print("Tails Selected")
         }
     }
-    
-    @IBAction func plusMinusCoin(_ sender: UIButton) {
-        if sender.tag == 0 && currentBet + 50 <= coins {
-            currentBet += 50
-        } else if sender.tag == 1 && currentBet - 50 >= 0 {
-            currentBet -= 50
-        }
-        betCoin.text = "\(currentBet)"
-    }
+
     
     func checkResult(spinResult: String, userChoice: String) {
         if spinResult == userChoice {
-            coins += currentBet * 2
-            showAlert(title: "You Win!", message: "You won \(currentBet * 2) coins!")
+            showAlert(title: "You Win!", message: "Lucky moment today")
+            
+            Adjust.trackEvent(ADJEvent.init(eventToken: "hdkshkhsk"))
         } else {
-            coins -= currentBet
-            showAlert(title: "You Lose!", message: "You lost \(currentBet) coins.")
+            showAlert(title: "You Lose!", message: "No luck, you can try again")
+            Adjust.trackEvent(ADJEvent.init(eventToken: "hdkshkhsds"))
         }
         
-        totalCoin.text = "\(coins)"
-        
-        if coins <= 0 {
-            showGameOverAlert()
-        }
     }
     
     func resetSelectionUI() {
@@ -106,28 +87,14 @@ class ArenaHadesTailsViewController: UIViewController {
         present(alert, animated: true)
     }
     
-    func showGameOverAlert() {
-        let alert = UIAlertController(title: "Game Over", message: "Your coins are over! Restarting the game with 1000 coins.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Restart", style: .default, handler: { _ in
-            self.coins = 1000
-            self.totalCoin.text = "\(self.coins)"
-            self.currentBet = 0
-            self.betCoin.text = "\(self.currentBet)"
-            self.resetSelectionUI()
-        }))
-        present(alert, animated: true)
-    }
-    
     func showHowToPlayAlert() {
             let message = """
             Welcome to Hades & Tails!
             
             - Select either Hades or Tails.
-            - Place your bet using the + and - buttons.
-            - Tap the Spin button to spin the coin.
-            - If the result matches your selection, you win double your bet!
-            - If not, you lose your bet amount.
-            - Keep spinning until your coins run out!
+            - Tap the Spin button to start.
+            - If the result matches your selection, you win and luck day!
+            - If not, you lose.
             """
             
             let alert = UIAlertController(title: "How to Play", message: message, preferredStyle: .alert)
