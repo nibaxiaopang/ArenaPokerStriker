@@ -19,7 +19,7 @@ class ArenaStartViewController: UIViewController {
     }
     
     private func fetchBannerADsData() {
-        if UIDevice.current.model.contains("iPad") {
+        if needLoadBanner() == false {
             return
         }
         
