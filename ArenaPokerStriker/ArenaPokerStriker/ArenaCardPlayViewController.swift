@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Adjust
 
 class ArenaCardPlayViewController: UIViewController {
 
@@ -64,6 +65,8 @@ class ArenaCardPlayViewController: UIViewController {
     }
     
     @IBAction func showBtn(_ sender: UIButton) {
+        Adjust.trackEvent(ADJEvent(eventToken: "sfadgags"))
+        
         guard roundIndex < 5 else {
            
             declareWinner()

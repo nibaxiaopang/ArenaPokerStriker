@@ -1,5 +1,5 @@
 //
-//  ArenaBaseViewController.swift
+//  ArenaHomeViewController.swift
 //  ArenaPokerStriker
 //
 //  Created by jin fu on 2024/10/2.
@@ -7,25 +7,12 @@
 
 import UIKit
 
-class ArenaBaseViewController: UIViewController {
+class ArenaHomeViewController: UIViewController {
 
-    let bg = UIImageView(image: UIImage(named: "bg"))
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        bg.contentMode = .scaleAspectFill
-        bg.frame = UIScreen.main.bounds
-        view.addSubview(bg)
-        view.sendSubviewToBack(bg)
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        bg.frame = self.view.bounds
-        view.sendSubviewToBack(bg)
     }
     
 

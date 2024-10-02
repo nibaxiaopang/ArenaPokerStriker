@@ -7,4 +7,5 @@ target 'ArenaPokerStriker' do
 
   # Pods for ArenaPokerStriker
   pod 'IQKeyboardManagerSwift'
+  pod 'Adjust', '4.38.4'
 end

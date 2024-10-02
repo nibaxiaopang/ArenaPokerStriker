@@ -25,7 +25,13 @@
 		FF478C152CAD4427000EA718 /* ArenaFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF478C142CAD4427000EA718 /* ArenaFeedbackViewController.swift */; };
 		FF478C172CAD444D000EA718 /* ArenaSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF478C162CAD4443000EA718 /* ArenaSettingViewController.swift */; };
 		FF478C192CAD4A66000EA718 /* ArenaBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF478C182CAD4A66000EA718 /* ArenaBaseViewController.swift */; };
-		FF478C1D2CAD4B24000EA718 /* ArenaPrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF478C1C2CAD4B24000EA718 /* ArenaPrivacyViewController.m */; };
+		FF478C1F2CAD4BB5000EA718 /* ArenaPrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF478C1E2CAD4BB5000EA718 /* ArenaPrivacyViewController.swift */; };
+		FF478C212CAD4CDD000EA718 /* ArenaHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF478C202CAD4CDD000EA718 /* ArenaHomeViewController.swift */; };
+		FF478C232CAD4D48000EA718 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF478C222CAD4D48000EA718 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FF478C252CAD4D4F000EA718 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF478C242CAD4D4F000EA718 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FF478C272CAD4D57000EA718 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF478C262CAD4D57000EA718 /* AppTrackingTransparency.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FF478C2A2CAD4E54000EA718 /* ArenaReachManage.m in Sources */ = {isa = PBXBuildFile; fileRef = FF478C292CAD4E54000EA718 /* ArenaReachManage.m */; };
+		FF478C2D2CAD4EFC000EA718 /* UIViewController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = FF478C2C2CAD4EFC000EA718 /* UIViewController+Ext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,8 +58,15 @@
 		FF478C162CAD4443000EA718 /* ArenaSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaSettingViewController.swift; sourceTree = "<group>"; };
 		FF478C182CAD4A66000EA718 /* ArenaBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaBaseViewController.swift; sourceTree = "<group>"; };
 		FF478C1A2CAD4B24000EA718 /* ArenaPokerStriker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArenaPokerStriker-Bridging-Header.h"; sourceTree = "<group>"; };
-		FF478C1B2CAD4B24000EA718 /* ArenaPrivacyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArenaPrivacyViewController.h; sourceTree = "<group>"; };
-		FF478C1C2CAD4B24000EA718 /* ArenaPrivacyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArenaPrivacyViewController.m; sourceTree = "<group>"; };
+		FF478C1E2CAD4BB5000EA718 /* ArenaPrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaPrivacyViewController.swift; sourceTree = "<group>"; };
+		FF478C202CAD4CDD000EA718 /* ArenaHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaHomeViewController.swift; sourceTree = "<group>"; };
+		FF478C222CAD4D48000EA718 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		FF478C242CAD4D4F000EA718 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		FF478C262CAD4D57000EA718 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		FF478C282CAD4E54000EA718 /* ArenaReachManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArenaReachManage.h; sourceTree = "<group>"; };
+		FF478C292CAD4E54000EA718 /* ArenaReachManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArenaReachManage.m; sourceTree = "<group>"; };
+		FF478C2B2CAD4EFC000EA718 /* UIViewController+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Ext.h"; sourceTree = "<group>"; };
+		FF478C2C2CAD4EFC000EA718 /* UIViewController+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Ext.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +75,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7973DA4E72B6BE8A7E12686 /* Pods_ArenaPokerStriker.framework in Frameworks */,
+				FF478C272CAD4D57000EA718 /* AppTrackingTransparency.framework in Frameworks */,
+				FF478C232CAD4D48000EA718 /* AdServices.framework in Frameworks */,
+				FF478C252CAD4D4F000EA718 /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +96,9 @@
 		AB3836FE8028DD125C61707B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FF478C262CAD4D57000EA718 /* AppTrackingTransparency.framework */,
+				FF478C242CAD4D4F000EA718 /* AdSupport.framework */,
+				FF478C222CAD4D48000EA718 /* AdServices.framework */,
 				4D6D353F6D2FD6A73F4612CB /* Pods_ArenaPokerStriker.framework */,
 			);
 			name = Frameworks;
@@ -114,6 +133,7 @@
 				FF478BFA2CAD3B8A000EA718 /* SceneDelegate.swift */,
 				FF478BFB2CAD3B8A000EA718 /* ArenaStartViewController.swift */,
 				FF478C042CAD42D7000EA718 /* ArenaNavigationController.swift */,
+				FF478C202CAD4CDD000EA718 /* ArenaHomeViewController.swift */,
 				FF478C182CAD4A66000EA718 /* ArenaBaseViewController.swift */,
 				FF478C062CAD4362000EA718 /* ArenaHadesTailsViewController.swift */,
 				FF478C082CAD4379000EA718 /* ArenaCardPlayViewController.swift */,
@@ -124,8 +144,11 @@
 				FF478C122CAD4416000EA718 /* ArenaReportViewController.swift */,
 				FF478C142CAD4427000EA718 /* ArenaFeedbackViewController.swift */,
 				FF478C162CAD4443000EA718 /* ArenaSettingViewController.swift */,
-				FF478C1B2CAD4B24000EA718 /* ArenaPrivacyViewController.h */,
-				FF478C1C2CAD4B24000EA718 /* ArenaPrivacyViewController.m */,
+				FF478C1E2CAD4BB5000EA718 /* ArenaPrivacyViewController.swift */,
+				FF478C282CAD4E54000EA718 /* ArenaReachManage.h */,
+				FF478C292CAD4E54000EA718 /* ArenaReachManage.m */,
+				FF478C2B2CAD4EFC000EA718 /* UIViewController+Ext.h */,
+				FF478C2C2CAD4EFC000EA718 /* UIViewController+Ext.m */,
 				FF478C1A2CAD4B24000EA718 /* ArenaPokerStriker-Bridging-Header.h */,
 			);
 			path = ArenaPokerStriker;
@@ -247,21 +270,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF478C1D2CAD4B24000EA718 /* ArenaPrivacyViewController.m in Sources */,
 				FF478C0D2CAD43B8000EA718 /* UIView+Ext.swift in Sources */,
 				FF478C072CAD4362000EA718 /* ArenaHadesTailsViewController.swift in Sources */,
 				FF478BFD2CAD3B8A000EA718 /* AppDelegate.swift in Sources */,
 				FF478C172CAD444D000EA718 /* ArenaSettingViewController.swift in Sources */,
 				FF478C052CAD42D7000EA718 /* ArenaNavigationController.swift in Sources */,
+				FF478C1F2CAD4BB5000EA718 /* ArenaPrivacyViewController.swift in Sources */,
 				FF478BFE2CAD3B8A000EA718 /* SceneDelegate.swift in Sources */,
+				FF478C212CAD4CDD000EA718 /* ArenaHomeViewController.swift in Sources */,
 				FF478C152CAD4427000EA718 /* ArenaFeedbackViewController.swift in Sources */,
 				FF478C0B2CAD439B000EA718 /* APSData.swift in Sources */,
 				FF478C132CAD4416000EA718 /* ArenaReportViewController.swift in Sources */,
 				FF478C192CAD4A66000EA718 /* ArenaBaseViewController.swift in Sources */,
 				FF478C0F2CAD43E3000EA718 /* UIStackView+Ext.swift in Sources */,
 				FF478C092CAD4379000EA718 /* ArenaCardPlayViewController.swift in Sources */,
+				FF478C2D2CAD4EFC000EA718 /* UIViewController+Ext.m in Sources */,
 				FF478C112CAD43FD000EA718 /* ArenaAboutViewController.swift in Sources */,
 				FF478BFF2CAD3B8A000EA718 /* ArenaStartViewController.swift in Sources */,
+				FF478C2A2CAD4E54000EA718 /* ArenaReachManage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +326,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ArenaPokerStriker/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Arena Poker Striker";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Arena Poker Striker needs to obtain your device information for analysis and to bring you a unique gaming experience.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -311,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ArenaPokerStriker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cardGame.ArenaPokerStriker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -336,6 +363,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ArenaPokerStriker/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Arena Poker Striker";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Arena Poker Striker needs to obtain your device information for analysis and to bring you a unique gaming experience.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -347,7 +375,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ArenaPokerStriker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cardGame.ArenaPokerStriker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
